@@ -7,7 +7,7 @@ const windUnit = ' м/с';
 var currentData;
 
 async function getData() {
-  let response = await fetch(url,{ mode: 'no-cors'});
+  let response = await fetch(url);
 
   if (response.ok) {
     let jsonData = response.json();
